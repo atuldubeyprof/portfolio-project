@@ -1,16 +1,24 @@
-import "./App.css";
+import React, { useState, useEffect, useMemo } from "react";
 
-function App() {
-  return (
-    <>
-      <div className="port">
-        <div className="card">
-          <h1>Atul Dubey</h1>
-          <p>Email: <a href="mailto:atuldubeyprof@gmail.com">atuldubeyprof@gmail.com</a></p>
-        </div>
-      </div>
-    </>
-  );
+import { useRef } from 'react';
+
+function App()
+{
+
+
+let a=useRef()
+
+useEffect(() => {
+a.current=a.current+1
+console.log("a",a.current)
+});
+
+return (
+  <div>
+    <p>Current Count: </p>
+
+  </div>
+);
 }
 
 export default App;
