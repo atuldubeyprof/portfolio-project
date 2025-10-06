@@ -1,0 +1,227 @@
+<!-- <! <html>
+<head>
+<style>
+#top{
+padding:"10px";
+color:"red";
+border: 1px solid red;
+gap:"10px";
+margin: 10px;
+text-align: center;
+
+}
+#medium{
+padding:"10px";
+color:"red";
+border: 1px solid yellow;
+gap:"10px";
+margin: 10px;
+text-align: center;
+}
+#bottom{
+padding:"10px";
+color:"red";
+border: 1px solid green;
+gap:"10px";
+text-align: center;
+margin: 10px;
+}
+</style>
+</head>
+
+
+<body>
+<p>Hello</p>
+<div id="top">
+top
+
+<div id="medium">
+medium
+
+<div id="bottom">
+bottom
+</div>
+
+</div>
+</div>
+
+
+
+<body>
+<script>
+document.getElementById("top").addEventListener("click",() =>{
+console.log("top clicked")
+
+})
+document.getElementById("medium").addEventListener("click",() =>{
+console.log("medium clicked")
+
+}
+)
+document.getElementById("bottom").addEventListener("click",() =>{
+console.log("bottom clicked")
+
+}
+)
+
+
+
+</script>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+
+  </head>
+  <body>
+  <button id="changeBtn">Click Me</button>
+<p id="text">Original Text</p>
+  <button id="changeBtn2">Click Me2</button>
+
+      <script >
+        const btn =document.getElementById("changeBtn")
+        const text = document.getElementById('text');
+        const btn2 =document.getElementById("changeBtn2")
+  btn.addEventListener('click', function() 
+
+{
+      console.log(text.textContent);
+  text.innerText = 'Text Changed!';
+  text.style.fontSize = "24px";
+  text.display = "none"
+
+  text.style.color="red"
+}
+  )
+
+  btn2.addEventListener('click', function() 
+
+{
+      console.log(text.textContent);
+  text.innerText = 'Original Text!';
+
+}
+);
+      
+        
+      </script>
+  </body>
+</html> --> 
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>innerHTML Example</title>
+</head>
+<body>
+
+  <button id="btn">Insert HTML</button>
+  <div id="output"></div>
+
+  <script>
+    const button = document.getElementById('btn');
+    const output = document.getElementById('output');
+
+    button.addEventListener('click', function() {
+      output.innerHTML = `<button>hello</button>
+     `;
+    });
+  </script>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>value Property</title>
+</head>
+<body>
+
+  <input id="userInput" type="text" placeholder="Type something..." />
+  <button id="btn">Show Value</button>
+  <p id="result"></p>
+
+  <script>
+    const input = document.getElementById('userInput');
+    const button = document.getElementById('btn');
+    const result = document.getElementById('result');
+
+    button.addEventListener('click', function() {
+      const userText = input.value;
+      result.textContent = "You typed: " + userText;
+    });
+  </script>
+
+</body>
+</html>
+ -->
+
+
+ <!-- <p>hello</p>
+
+ <input id="inp"
+ type="text"
+
+ 
+ > </input>
+
+<p id="para"></p>
+ <button id="btn">
+clickme
+ </button>
+
+ 
+<script>
+ // console.log("body",document.getElementsByTagName("body"))
+//  let i=document.createElement(
+  
+//  )
+  let inpu=document.getElementById("inp")
+  let btn1=document.getElementById("btn")
+let  para=document.getElementById("para")
+//let newDiv = document.createElement('div');
+
+
+//newDiv.textContent = "Hello, I'm a new div!";
+
+//newDiv.className = "my-new-div";
+//newDiv.id = "newDiv";
+// newDiv.style.backgroundColor = "lightblue";
+
+// let parentElement = document.body;  
+// parentElement.appendChild(newDiv);
+  btn1.addEventListener('click',()=>{
+console.log(inpu.value)
+para.textContent=inpu.value +para.textContent
+
+
+  })
+  
+
+</script> -->
+
+
+<div class="slide">I'm sliding in!</div>
+
+<style>
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide {
+    animation: slideIn 1s forwards;
+    background-color: lightblue;
+    padding: 20px;
+    width: 200px;
+  }
+</style>
+
+
